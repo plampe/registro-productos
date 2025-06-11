@@ -45,6 +45,6 @@ CREATE TABLE producto_material (
 -- Datos de ejemplo
 INSERT INTO bodegas (nombre) VALUES ('Bodega Central'), ('Bodega Norte');
 INSERT INTO sucursales (nombre, bodega_id) VALUES 
-('Sucursal A', 1), ('Sucursal B', 1), ('Sucursal C', 2);
+('Sucursal A', 1), ('Sucursal B', 1), ('Sucursal C', 2), ('Sucursal D', 2), ('Sucursal E', 2);
 INSERT INTO monedas (nombre) VALUES ('CLP'), ('USD'), ('EUR');
 INSERT INTO materiales (nombre) VALUES ('Plástico'), ('Metal'), ('Madera'), ('Vidrio'), ('Textil');
