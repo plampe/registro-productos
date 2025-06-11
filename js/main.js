@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(res => res.json())
       .then(data => {
         const select = document.getElementById("moneda");
-       select.innerHTML = `<option value="" disabled selected hidden> </option>`;
+        select.innerHTML = `<option value="" disabled selected hidden> </option>`;
         data.forEach(item => {
           select.innerHTML += `<option value="${item.id}">${item.nombre}</option>`;
         });
