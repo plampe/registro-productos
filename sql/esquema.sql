@@ -47,4 +47,4 @@ INSERT INTO bodegas (nombre) VALUES ('Bodega Central'), ('Bodega Norte');
 INSERT INTO sucursales (nombre, bodega_id) VALUES 
 ('Sucursal A', 1), ('Sucursal B', 1), ('Sucursal C', 2);
 INSERT INTO monedas (nombre) VALUES ('CLP'), ('USD'), ('EUR');
-INSERT INTO materiales (nombre) VALUES ('Plástico'), ('Metal'), ('Vidrio'), ('Cartón');
+INSERT INTO materiales (nombre) VALUES ('Plástico'), ('Metal'), ('Madera'), ('Vidrio'), ('Textil');
