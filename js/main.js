@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(res => res.json())
       .then(data => {
         const select = document.getElementById("bodega");
-        select.innerHTML = `<option value="">Seleccione una bodega</option>`;
+        select.innerHTML = `<option value="" disabled selected hidden> </option>`;
         data.forEach(item => {
           select.innerHTML += `<option value="${item.id}">${item.nombre}</option>`;
         });
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(res => res.json())
       .then(data => {
         const select = document.getElementById("sucursal");
-        select.innerHTML = `<option value="">Seleccione una sucursal</option>`;
+        select.innerHTML = `<option value="" disabled selected hidden> </option>`;
         data.forEach(item => {
           select.innerHTML += `<option value="${item.id}">${item.nombre}</option>`;
         });
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(res => res.json())
       .then(data => {
         const select = document.getElementById("moneda");
-        select.innerHTML = `<option value="">Seleccione una moneda</option>`;
+       select.innerHTML = `<option value="" disabled selected hidden> </option>`;
         data.forEach(item => {
           select.innerHTML += `<option value="${item.id}">${item.nombre}</option>`;
         });
