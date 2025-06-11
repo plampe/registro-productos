@@ -7,41 +7,52 @@
 </head>
 <body>
   <h1>Registro de Producto</h1>
-  <form id="formProducto">
-    <label>Código del Producto:</label>
-    <input type="text" id="codigo" name="codigo"><br>
+  <form id="formProducto" class="form-grid">
 
-    <label>Nombre del Producto:</label>
-    <input type="text" id="nombre" name="nombre"><br>
+  <div class="form-group">
+    <label for="codigo">Código del Producto:</label>
+    <input type="text" id="codigo" name="codigo">
+  </div>
 
-    <label>Bodega:</label>
-    <select id="bodega" name="bodega">
-      <option value="">Seleccione una bodega</option>
-    </select><br>
+  <div class="form-group">
+    <label for="nombre">Nombre del Producto:</label>
+    <input type="text" id="nombre" name="nombre">
+  </div>
 
-    <label>Sucursal:</label>
-    <select id="sucursal" name="sucursal">
-      <option value="">Seleccione una sucursal</option>
-    </select><br>
+  <div class="form-group">
+    <label for="bodega">Bodega:</label>
+    <select id="bodega" name="bodega"></select>
+  </div>
 
-    <label>Moneda:</label>
-    <select id="moneda" name="moneda">
-      <option value="">Seleccione una moneda</option>
-    </select><br>
+  <div class="form-group">
+    <label for="sucursal">Sucursal:</label>
+    <select id="sucursal" name="sucursal"></select>
+  </div>
 
-    <label>Precio:</label>
-    <input type="text" id="precio" name="precio"><br>
+  <div class="form-group">
+    <label for="moneda">Moneda:</label>
+    <select id="moneda" name="moneda"></select>
+  </div>
 
+  <div class="form-group">
+    <label for="precio">Precio:</label>
+    <input type="text" id="precio" name="precio">
+  </div>
+
+  <div class="form-full">
     <label>Material del Producto:</label><br>
-    <div id="materiales">
-      <!-- Se llenará dinámicamente -->
-    </div>
+    <div id="materiales"></div>
+  </div>
 
-    <label>Descripción del Producto:</label><br>
-    <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+  <div class="form-full">
+    <label for="descripcion">Descripción del Producto:</label><br>
+    <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+  </div>
 
+  <div class="form-full center">
     <button type="submit" id="btnGuardar">Guardar Producto</button>
-  </form>
+  </div>
+</form>
 
   <script src="js/main.js"></script>
 </body>
