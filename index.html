@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Producto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Registro de Producto</h1>
+  <form id="formProducto">
+    <label>Código del Producto:</label>
+    <input type="text" id="codigo" name="codigo"><br>
+
+    <label>Nombre del Producto:</label>
+    <input type="text" id="nombre" name="nombre"><br>
+
+    <label>Bodega:</label>
+    <select id="bodega" name="bodega">
+      <option value="">Seleccione una bodega</option>
+    </select><br>
+
+    <label>Sucursal:</label>
+    <select id="sucursal" name="sucursal">
+      <option value="">Seleccione una sucursal</option>
+    </select><br>
+
+    <label>Moneda:</label>
+    <select id="moneda" name="moneda">
+      <option value="">Seleccione una moneda</option>
+    </select><br>
+
+    <label>Precio:</label>
+    <input type="text" id="precio" name="precio"><br>
+
+    <label>Material del Producto:</label><br>
+    <div id="materiales">
+      <!-- Se llenará dinámicamente -->
+    </div>
+
+    <label>Descripción del Producto:</label><br>
+    <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+
+    <button type="submit" id="btnGuardar">Guardar Producto</button>
+  </form>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
