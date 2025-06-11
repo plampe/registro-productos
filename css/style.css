@@ -13,7 +13,7 @@ body {
   
   /* Estilos generales del formulario */
   form {
-    max-width: 600px;
+    max-width: 50%;
     margin: 0 auto;
     background-color: #fff;
     padding: 25px;
@@ -67,9 +67,33 @@ body {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+      width: 200px;
   }
   
   #btnGuardar:hover {
     background-color: #168d73;
   }
-  
+
+    .center {
+      text-align: center;
+    }
+
+/* GRID de formulario en dos columnas */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Cada grupo ocupa una celda */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grupos que deben ocupar todo el ancho */
+.form-full {
+  grid-column: span 2;
+  margin-top: 10px;
+}
+
