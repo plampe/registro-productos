@@ -9,3 +9,4 @@ $stmt->execute([$codigo]);
 echo json_encode([
   "exists" => $stmt->rowCount() > 0
 ]);
+?>
